@@ -1,5 +1,5 @@
 export default function Header() {
   return (
-    <h1>Cu da mae do nicolas</h1>
+    <h1>Footer</h1>
   );
 }
