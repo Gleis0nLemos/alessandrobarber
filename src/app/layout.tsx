@@ -34,7 +34,9 @@ export default function RootLayout({
         <main>
           {children}  
         </main>
-        <Footer />
+        <div className="bg-zinc-950">
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -27,7 +27,7 @@ export default function Header() {
             <li>
               <a 
                 href="#"
-                className='text-yellow-500 font-medium'
+                className='text-yellow-500 font-semibold'
                 >
                   Fale conosco
               </a>
