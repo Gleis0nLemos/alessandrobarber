@@ -13,7 +13,7 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="px-1 pt-6 border-t border-zinc-900">
+    <div className="px-1 pt-6 pb-12 border-t border-zinc-900">
       <div className="pb-4">
         <h2 className="text-2xl font-semibold mb-2 pb-2">Galeria</h2>
         <p className="text-sm font-medium text-gray-400">Confira abaixo um pouco do nosso trabalho</p>
