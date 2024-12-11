@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <header 
-        className="flex justify-between max-w-[1000px] mx-auto px-12 py-5 border-b border-gray-800"
+        className="flex justify-between max-w-[1000px] mx-auto px-1 py-5 border-b border-gray-800"
         >
         <div className='flex items-center gap-2'>
           <Image
