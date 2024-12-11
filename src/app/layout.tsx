@@ -31,12 +31,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <main>
-          {children}  
-        </main>
-        <div className="bg-zinc-950">
-          <Footer />
-        </div>
+        {children}  
+        <Footer />
       </body>
     </html>
   );
