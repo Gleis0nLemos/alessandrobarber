@@ -1,5 +1,5 @@
-import Loc from '../assets/loc.svg'
 import Image from 'next/image'
+import Loc from '../assets/loc.svg'
 
 export default function Localization() {
   return (
@@ -14,7 +14,7 @@ export default function Localization() {
             src={Loc}
             width={15}
             height={15}
-            alt="Logo da empresa"
+            alt="Localização"
           />
           <p className='text-sm font-medium text-gray-400 hover:underline underline-offset-4'>                
             <a href="https://maps.app.goo.gl/gAqQWCyDXWBD8joo6">R. Baturité, 1845 - Mangueiral, Horizonte - CE, 62880-602</a>
