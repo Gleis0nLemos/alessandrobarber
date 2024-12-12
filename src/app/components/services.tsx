@@ -5,27 +5,67 @@ import { useRef, useState } from "react";
 const services = [
   {
     title: "Corte na máquina",
-    price: "R$ 20.00",
+    price: "R$ 30.00",
   },
   {
-    title: "Corte na máquina",
-    price: "R$ 20.00",
+    title: "Corte/Degradê",
+    price: "R$ 35.00",
   },
   {
-    title: "Corte na máquina",
-    price: "R$ 20.00",
+    title: "Barba",
+    price: "R$ 30.00",
   },
   {
-    title: "Corte na máquina",
-    price: "R$ 20.00",
+    title: "Limpeza/Pele",
+    price: "R$ 30.00",
   },
   {
-    title: "Corte na máquina",
-    price: "R$ 20.00",
+    title: "Corte/Tesoura",
+    price: "R$ 40.00",
   },
   {
-    title: "Corte na máquina",
-    price: "R$ 20.00",
+    title: "Realinhamento Capilar",
+    price: "R$ 80.00",
+  },
+  {
+    title: "Luzes Capilar",
+    price: "R$ 80.00",
+  },
+  {
+    title: "Platinado/Nevou",
+    price: "R$ 100.00",
+  },
+  {
+    title: "Corte/Máquina + Sobrancelha",
+    price: "R$ 40.00",
+  },
+  {
+    title: "Corte/Degradê + Sobrancelha",
+    price: "R$ 45.00",
+  },
+  {
+    title: "Corte/Máquina + Barba + Sobrancelha",
+    price: "R$ 70.00",
+  },
+  {
+    title: "Corte/Máquina + Barba + Sobrancelha + Nevou",
+    price: "R$ 170.00",
+  },
+  {
+    title: "Corte/Disfarce + Barba",
+    price: "R$ 65.00",
+  },
+  {
+    title: "Corte/Disfarce + Barba + Sobrancelha",
+    price: "R$ 75.00",
+  },
+  {
+    title: "Corte/Disfarce + Barba + Sobrancelha + Limpeza",
+    price: "R$ 105.00",
+  },
+  {
+    title: "Corte/Disfarce + Realinhamento Capilar",
+    price: "R$ 115.00",
   },
 ];
 
@@ -78,11 +118,12 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-zinc-900 border border-zinc-900 shadow-md rounded px-6 py-4 min-w-[200px]"
+              className="flex flex-col justify-between bg-zinc-900 border border-zinc-900 shadow-md rounded px-4 py-3 min-w-[200px] transform hover:scale-105 transition duration-500 hover:bg-zinc-800 cursor-pointer"
             >
-              <h3 className="text-xl font-bold mb-24">{service.title}</h3>
-              <hr className="border-gray-500" />
-              <p className="text-gray-400 font-bold pt-2">{service.price}</p>
+              <h3 className="text-xl font-bold pb-4">{service.title}</h3>
+              <div className="mt-auto pt-2 border-t border-gray-500">
+                <p className="text-gray-400 font-bold pt-1 pb-1">{service.price}</p>
+              </div>
             </div>
           ))}
         </div>
